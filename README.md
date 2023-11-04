@@ -1,2 +1,3 @@
 # SpiderSchool
 dot絵はすべて自作です。
+注：中途半端に名前変更したせいでSpiderSchoolとSpiderHouseがごっちゃになってます。
