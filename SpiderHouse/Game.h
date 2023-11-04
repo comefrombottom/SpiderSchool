@@ -125,7 +125,7 @@ public:
 	}
 	~Game() {
 
-		if constexpr(true and BUILDABLE) {
+		if constexpr(BUILDABLE) {
 			// バイナリファイルをオープン
 			Serializer<BinaryWriter> writer{ U"stageMaps.bin" };
 
@@ -153,7 +153,7 @@ public:
 		auto& rideSpiders = stageMaps[stageMapIndex].rideSpiders;
 		auto& swingSpiders = stageMaps[stageMapIndex].swingSpiders;
 
-		if constexpr (BUILDABLE and firstUpdate and KeyControl.pressed() and KeyB.down()) {
+		if (BUILDABLE and firstUpdate and KeyControl.pressed() and KeyB.down()) {
 			if (buildMode) {
 				buildMode = false;
 				camera.setParameters(Camera2DParameters::NoControl());
@@ -844,7 +844,7 @@ public:
 				ScopedRenderStates2D sampler{ SamplerState::ClampNearest };
 				renderTexture.scaled(2).draw(renderTPosIndex * StageMap::oneCellSize);
 			}
-			if constexpr (BUILDABLE and (buildMode or KeyQ.pressed())) {
+			if (BUILDABLE and (buildMode or KeyQ.pressed())) {
 				for (auto& index : list) {
 					colGrid.draw(index);
 				}
