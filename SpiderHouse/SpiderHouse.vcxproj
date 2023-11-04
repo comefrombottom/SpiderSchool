@@ -115,18 +115,11 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Game.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Player.cpp" />
-    <ClCompile Include="RideSpider.cpp" />
-    <ClCompile Include="StageMap.cpp" />
-    <ClCompile Include="StageRectUnit.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="SwingSpider.cpp" />
-    <ClCompile Include="TrampolineSpider.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="App\engine\texture\box-shadow\128.png" />
@@ -331,7 +324,6 @@
     <ClInclude Include="Prologue.h" />
     <ClInclude Include="RideSpider.h" />
     <ClInclude Include="StageMap.h" />
-    <ClInclude Include="StageRectUnit.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="SwingSpider.h" />
     <ClInclude Include="Title.h" />
