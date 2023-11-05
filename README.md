@@ -1,3 +1,4 @@
 # SpiderSchool
 dot絵はすべて自作です。
+ビルド画面でSiv3D公式サンプルのPulldownを使用しています。
 注：中途半端に名前変更したせいでSpiderSchoolとSpiderHouseがごっちゃになってます。
